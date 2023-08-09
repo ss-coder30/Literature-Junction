@@ -6,67 +6,192 @@
     <title>Self Help Section</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
+    <style>
+      @keyframes slideInFromLeft {
+          0% {
+                transform: translateX(-100%);
+            }
+          100% {
+                transform: translateX(0);
+              }
+        }
+        header {  
+  /* This section calls the slideInFromLeft animation we defined above */
+                animation: 1s ease-out 0s 1 slideInFromLeft;
+        }
+        footer{
+          margin-top: 5rem;
+          background-color: rgb(218, 192, 163);
+          animation: 1s ease-out 0s 1 slideInFromLeft;
+        }
+        #content{
+          animation: 1s ease-out 0s 1 slideInFromLeft;
+        }
+        body{
+            background-color: #FFDBC3;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #8CABFF;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Literature Junction</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
-            </div>
+  <header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #DAC0A3;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Literature Junction</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+            <a class="nav-link" href="#">Fiction</a>
+            <a class="nav-link active" href="/selfHelp.html" target="_main">Self-Help</a>
+            <a class="nav-link" href="#">Science Fiction</a>
+            <a class="nav-link" href="#">Mystery</a>
+            <a class="nav-link" href="#">Thriller</a>
+            <a class="nav-link" href="#">Horror</a>
+            <a class="nav-link" href="#">Comedy</a>                   <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
           </div>
         </div>
-    </nav>
-
-    <div class="row row-cols-1 row-cols-md-4 g-4 mt-5 mx-5">
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="/images/you-mean-im-not-lazy-stupid-or-crazy--9780743288941_xlg.jpg" height="300px" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <a href="/books/_OceanofPDF.com_You_Mean_Im_Not_Lazy_Stupid_or_Crazy_-_Kate_Kelly.pdf" target="_main" class="btn btn-primary">Read It</a>
-
-                </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
       </div>
+    </nav>
+  </header>
+
+    <div id="content">
+      <!-- row 1 -->
+    <div class="row row-cols-1 row-cols-md-4 g-4 mt-5 mx-5">
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="/images/you-mean-im-not-lazy-stupid-or-crazy--9780743288941_xlg.jpg" height="300px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a href="/books/_OceanofPDF.com_You_Mean_Im_Not_Lazy_Stupid_or_Crazy_-_Kate_Kelly.pdf" target="_main" class="btn btn-primary">Read It</a>
+
+              </div>
+            </div>
+      </div>
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- row 2 -->
+    <div class="row row-cols-1 row-cols-md-4 g-4 mt-5 mx-5">
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="/images/you-mean-im-not-lazy-stupid-or-crazy--9780743288941_xlg.jpg" height="300px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a href="/books/_OceanofPDF.com_You_Mean_Im_Not_Lazy_Stupid_or_Crazy_-_Kate_Kelly.pdf" target="_main" class="btn btn-primary">Read It</a>
+
+              </div>
+            </div>
+      </div>
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- row 3 -->
+    <div class="row row-cols-1 row-cols-md-4 g-4 mt-5 mx-5">
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="/images/you-mean-im-not-lazy-stupid-or-crazy--9780743288941_xlg.jpg" height="300px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a href="/books/_OceanofPDF.com_You_Mean_Im_Not_Lazy_Stupid_or_Crazy_-_Kate_Kelly.pdf" target="_main" class="btn btn-primary">Read It</a>
+
+              </div>
+            </div>
+      </div>
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+      <footer>
+        <div class="footer text-center pb-4 pt-3 sticky-bottom">
+            &copy; 2023 by Shaurya Srivastava
+        </div>
+      </footer>  
     
 </body>
 </html>
